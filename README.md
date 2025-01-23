@@ -1,4 +1,4 @@
-# **Prisma Project**
+# **Node.js + Express.js + PrismaORM**
 
 Este é um projeto de exemplo utilizando **Node.js**, **Express.js** com **TypesCript** e **PrismaORM**.
 O objetivo é demonstrar como configurar e utilizar o Prisma para interagir com um banco de dados PostgreSQL em um ambiente TypeScript.
