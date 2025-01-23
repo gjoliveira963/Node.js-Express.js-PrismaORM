@@ -1,0 +1,48 @@
+{
+  "name": "node.js-express.js-prismaorm",
+  "version": "1.0.0",
+  "description": "Projeto de exemplo utilizando Node.js, Express.js com TypesCript e PrismaORM para interagir com banco de dados de forma moderna e eficiente.",
+  "keywords": [
+    "prisma",
+    "typescript",
+    "postgresql",
+    "orm",
+    "backend",
+    "database",
+    "nodejs"
+  ],
+  "homepage": "https://github.com/gjoliveira963/Node.js-Express.js-PrismaORM#readme",
+  "bugs": {
+    "url": "https://github.com/gjoliveira963/Node.js-Express.js-PrismaORM/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gjoliveira963/Node.js-Express.js-PrismaORM.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "G. J. Oliveira",
+    "email": "development@gjoliveira.dev"
+  },
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --clear src/index.ts",
+    "start": "node dist/index.js",
+    "test": "echo 'Error: no test specified' && exit 1"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.7",
+    "prisma": "^6.2.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
