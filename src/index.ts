@@ -3,17 +3,17 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
 async function main() {
-  const allUsers = await prisma.users.findMany();
-  console.log(allUsers);
+  return await prisma.users.findMany();
 }
 
 main()
-  .then(() => {
-    console.log("Done");
+  .then((res) => {
+    console.log("Done: ", res);
   })
   .catch((e) => {
     console.error(e);
   })
   .finally(async () => {
     await prisma.$disconnect();
+    console.log("Disconnected");
   });
