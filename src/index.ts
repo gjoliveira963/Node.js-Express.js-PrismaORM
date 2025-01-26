@@ -8,12 +8,12 @@ async function main() {
 
 main()
   .then((res) => {
-    console.log("Done: ", res);
+    console.log("Query success: ", res);
   })
   .catch((e) => {
-    console.error(e);
+    console.error("Query error: ", e);
   })
   .finally(async () => {
     await prisma.$disconnect();
-    console.log("Disconnected");
+    console.log("Prisma disconnected successfully");
   });

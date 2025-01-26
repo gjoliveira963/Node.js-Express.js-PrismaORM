@@ -29,7 +29,7 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 2. **Instalar dependências de desenvolvimento**:
 
    ```bash
-   npm i -D typescript ts-node-dev @types/node prisma
+   npm i -D typescript tsx @types/node prisma
    ```
 
 3. **Inicializar o TypeScript**:
@@ -70,11 +70,13 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
    npx prisma generate
    ```
 
-8. **Adicionar script de desenvolvimento no `package.json`**:
+8. **Adicionar scripts de desenvolvimento no `package.json`**:
 
    ```json
    "scripts": {
-     "dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --clear src/index.ts"
+     "build": "tsc",
+     "start": "tsx watch src/index.ts",
+     "serve": "node dist/index.js"
    }
    ```
 
@@ -101,7 +103,7 @@ prisma-project/
 Para iniciar o projeto em modo de desenvolvimento, execute o comando abaixo:
 
 ```bash
-npm run dev
+npm run start
 ```
 
 ## **Licença**
